@@ -1,0 +1,4 @@
+1. create the directory as we havethe node-web-server
+2. run composer init to setup the project defualt dependencies to be able to create our package.json for us
+3. run npm install express --save to install our express js npm library for us  which will serve as our server for routing purpose any many other config
+4. created server.js file in the root directory
