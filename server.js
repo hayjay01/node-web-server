@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
+const port = process.env.PORT || 3000; //Sets the port to run on asin env.port should be meant for heroku 3000 if the env.port is abscent then use port 3000 localhost
 
 var app = express(); //we can now use `express` as a function with bracket because weve declared instantianted it up here, app var serve as the Route:: in laravel see below example
 var currentYear = new Date().getFullYear();
@@ -74,6 +75,6 @@ app.get('/bad', (req, res) => {
 });
 
 //for the app to be able to run on the web browser, we need to bind the application to a port by listening to the port: see below
-app.listen(8080, () => {
-	console.log('Server is up and running on port 8080');
+app.listen(port, () => {
+	console.log(`Server is up and running on port 8080 ${port}`);
 });
