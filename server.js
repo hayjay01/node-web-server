@@ -37,9 +37,9 @@ app.use((req, res, next) => { //on the req obj, we have access to every request 
 	next();
 });
 
-app.use((req, res, next) => {
-	res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+// 	res.render('maintenance.hbs');
+// });
 
 app.get('/', (req, res) => {
 	//get() basically takes two param one: the url two the function u want to execute, also: the second param
